@@ -12,7 +12,8 @@ namespace Day19_UserRegistrationAssignments
         {
             Console.WriteLine("Welcome to Regular expression problem");
             Console.WriteLine(" Please select program from following");
-            Console.WriteLine(" 1.Check first name is valid or not\n 2.Check last name is valid or not");
+            Console.WriteLine(" 1.Check first name is valid or not\n 2.Check last name is valid or not\n" +
+                "3.Check email is valid or not");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -23,6 +24,10 @@ namespace Day19_UserRegistrationAssignments
                 case 2:
                     ValidLastName validLastName = new ValidLastName();
                     validLastName.LastNameCheck();
+                    break;
+                case 3:
+                    ValidEmail validemail = new ValidEmail();
+                    validemail.ValidateEmailChecker();
                     break;
 
 
