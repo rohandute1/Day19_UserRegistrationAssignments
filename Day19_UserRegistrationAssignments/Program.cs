@@ -14,7 +14,7 @@ namespace Day19_UserRegistrationAssignments
             Console.WriteLine(" Please select program from following");
             Console.WriteLine(" 1.Check first name is valid or not\n 2.Check last name is valid or not\n" +
                 " 3.Check email is valid or not\n 4.Check phone number is valid or not\n" +
-                " 5.Check password is Strong or not");
+                " 5.Check password is Strong or not\n 6.Check email will clear all given samples or not");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -37,6 +37,10 @@ namespace Day19_UserRegistrationAssignments
                 case 5:
                     ValidatePassword validPass = new ValidatePassword();
                     validPass.ValidPasswordChecker();
+                    break;
+                case 6:
+                    ClearEmailSample emailSampleCheck = new ClearEmailSample();
+                    emailSampleCheck.EmailSamplesChecker();
                     break;
 
 
