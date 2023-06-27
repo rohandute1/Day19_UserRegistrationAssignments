@@ -48,6 +48,7 @@
     <Compile Include="ValidEmail.cs" />
     <Compile Include="ValidFirstName.cs" />
     <Compile Include="ValidLastName.cs" />
+    <Compile Include="ValidPhoneNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
